@@ -3,8 +3,8 @@
 **Arithmetic Logic and Clear Button.**
 
 **Logic Buttons**
--Added arithmetic logic to each of the buttons
--Answer of values to inputBox A and inputBox B can now be float, also float answer is limited to "%.4f" decimals.
+- Added arithmetic logic to each of the buttons
+- Answer of values to inputBox A and inputBox B can now be float, also float answer is limited to "%.4f" decimals.
 
 **Clear Button**
 - Added new button that clears inputs and answer, so new calculation can be performed.
