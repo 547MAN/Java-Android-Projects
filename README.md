@@ -1,5 +1,10 @@
 ## 04.09.2024
 
+![Before arithemtic operation:](https://github.com/547MAN/Java-Android-Projects/blob/Calculator/screen_shot%20before%20operation.png)
+![After addition arithemtic operation:](https://github.com/547MAN/Java-Android-Projects/blob/Calculator/screen_shot%20after%20operation.png)
+
+
+
 **Arithmetic Logic and Clear Button.**
 
 **Logic Buttons**
