@@ -9,28 +9,12 @@
     tools:layout_editor_absoluteX="10dp"
     tools:layout_editor_absoluteY="27dp">
 
-    <ImageButton
-        android:id="@+id/img_btn_minus_sign"
-        android:layout_width="46dp"
-        android:layout_height="50dp"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:scaleType="fitXY"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toEndOf="@+id/img_btn_pluss_sign"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469"
-        app:srcCompat="@drawable/minus_sign" />
-
     <EditText
         android:id="@+id/first_numb_input"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:hint="@string/numb_input"
+        android:hint="@string/numb_inputA"
         android:inputType="numberDecimal|numberSigned"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,22 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.343" />
-
-    <ImageButton
-        android:id="@+id/img_btn_pluss_sign"
-        android:layout_width="46dp"
-        android:layout_height="50dp"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:scaleType="fitXY"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469"
-        app:srcCompat="@drawable/plus_sign" />
 
     <ImageButton
         android:id="@+id/img_btn_multiply_sign"
@@ -69,23 +37,24 @@
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toEndOf="@+id/img_btn_minus_sign"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469"
+        app:layout_constraintVertical_bias="0.515"
         app:srcCompat="@drawable/multiply_sign" />
 
-    <EditText
-        android:id="@+id/second_numb_input"
-        android:layout_width="100dp"
+    <ImageButton
+        android:id="@+id/img_btn_pluss_sign"
+        android:layout_width="46dp"
         android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="numberDecimal|numberSigned"
-        android:hint="@string/numb_input"
-        android:textSize="15dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toEndOf="@+id/first_numb_input"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/plus_sign" />
 
     <ImageButton
         android:id="@+id/img_btn_division_sign"
@@ -97,18 +66,49 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toEndOf="@+id/img_btn_multiply_sign"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469"
+        app:layout_constraintVertical_bias="0.515"
         app:srcCompat="@drawable/devide_sign" />
+
+    <ImageButton
+        android:id="@+id/img_btn_minus_sign"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_pluss_sign"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/minus_sign" />
+
+    <EditText
+        android:id="@+id/second_numb_input"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/numb_inputB"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toEndOf="@+id/first_numb_input"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
 
     <TextView
         android:id="@+id/answer_box"
         android:layout_width="134dp"
         android:layout_height="55dp"
         android:text="Answer"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
@@ -130,5 +130,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.634"
         app:srcCompat="@drawable/equals_sign" />
+
+    <Button
+        android:id="@+id/clear_input_btn"
+        android:layout_width="85dp"
+        android:layout_height="46dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

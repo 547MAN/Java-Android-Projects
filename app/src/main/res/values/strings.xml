@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="numb_input">Any number</string>
+    <string name="numb_inputA">Number A</string>
+    <string name="numb_inputB">Number B</string>
 </resources>
